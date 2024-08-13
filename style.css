@@ -176,7 +176,7 @@ section{
     transition: 0.3s ease-in-out;
 }
 .btn:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
     box-shadow: 0 0 25px var(--main-color),
                 0 0 50px var(--main-color);
 }
@@ -327,6 +327,11 @@ section{
 .project-card p{
     font-size: 1.6rem;
 }
+.project-card a{
+    text-decoration: none;
+    color: azure;
+    font-weight: 400;
+}
 .contact{
     background-color: var(--bg-color);
 }
@@ -442,3 +447,19 @@ section{
 
 
 }
+
+section {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
